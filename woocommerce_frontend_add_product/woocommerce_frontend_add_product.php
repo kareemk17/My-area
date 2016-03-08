@@ -104,6 +104,7 @@ if (isset($_POST["submit"])) {
          $product_cat_name = $_POST["product_category"];
        }
     }
+    
   if(isset($title) && isset($price) && isset($stock_qu)){
     $u_id = get_current_user_id();
     $post = array(
