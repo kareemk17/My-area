@@ -1,0 +1,168 @@
+/*style */
+.add-product input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;\color: #6D7781;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.add-product input[type="text"]:focus,
+.add-product input[type="text"].focus {
+  border-bottom: solid 2px #969696;
+}
+
+.add-product input[type="number"] {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;\color: #6D7781;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.add-product input[type="number"]:focus,
+.add-product input[type="number"].focus {
+  border-bottom: solid 2px #969696;
+}
+
+
+.add-product textarea {
+  padding: 10px;
+  border: none;
+  border: solid 2px #c9c9c9;
+  transition: border 0.3s;\color: #6D7781;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+  height: 150px;;
+}
+.add-product textarea:focus,
+.add-product textarea.focus {
+  border: solid 2px #969696;
+}
+
+.add-product select {
+  padding: 5px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;\color: #6D7781;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.add-product input[type="submit"] {
+  background: #1FCE6D;
+  border: 0;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+.add-product #submit {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.add-product input[type=file] {
+  margin-top: 15px;
+  transition: border 0.3s;\color: #6D7781;
+  border: 0;
+  height: 35px;
+  border-radius: 3px;
+  color: #c9c9c9;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.add-product input[type="submit"]:hover {
+  background: #16aa56;
+}
+.add-product .Err {
+  border: solid 2px #f96b6b;
+  color : #666;
+  font-size : 18px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+
+.add-product input.error_falid{
+  border-bottom: solid 2px #f96b6b;
+  transition: border 0.3s;\color: #f96b6b;
+}
+.add-product input.error_falid:focus {
+  border-bottom: solid 2px #969696;
+  transition: border 0.3s;\color: #969696;
+}
+
+.add-product input.correct{
+  border-bottom: solid 2px #16aa56;
+  transition: border 0.3s;\color: #16aa56;
+}
+
+.add-product .agree {
+  border: solid 2px #c9c9c9;
+  color : #666;
+  font-size : 18px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.vendor-post {
+  border: solid 2px #c9c9c9;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  height: auto;
+}
+
+.edit {
+  float : right;
+  margin-left: 5px;
+}
+.deleted {
+  border: solid 2px #f96b6b;
+  color : #666;
+  padding: 15px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  height: auto;
+  margin-bottom: 15px;
+}
+.main #tab1:checked ~ .deleted,
+.main #tab2:checked ~ .deleted,
+{
+  display: none;
+}
+/* Tabs */
+
+   .main {margin: 0 auto;}
+   .content {background: #fff; color: #777;}
+   .content > div {display: none; padding: 20px 25px 5px;}
+
+   .main input[type="radio"] {display: none;}
+   .main label {display: inline-block; padding: 15px 25px; font-weight: 600; text-align: center; background: #eee}
+   .main label:hover {color: #777; cursor: pointer;}
+   .main input[type="radio"]:checked + label {background: #e5735c; color: #fff;}
+
+   .main #tab1:checked ~ .content #content1,
+   .main #tab2:checked ~ .content #content2,
+   .main #tab3:checked ~ .content #content3,
+   .main #tab4:checked ~ .content #content4 {
+     display: block;
+   }
+
+   .dis {
+     display: none;
+     background: red;
+   }
