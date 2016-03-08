@@ -114,7 +114,21 @@ if (isset($_POST["submit"])) {
     'post_author'   => $u_id ,
     'post_type' => 'product'  // Use a custom post type if you want to
     );
-    
+    $product_ID = wp_insert_post($post);  // http://codex.wordpress.org/Function_Reference/wp_insert_post
+     if ( $product_ID ){
+           validation_of_cat($all_categories,$product_ID, $product_cat_name);
+          $image = insert_product_images($product_ID);
+          add_post_meta($product_ID, '_regular_price', $price );
+          add_post_meta($product_ID, '_price', $price );
+          add_post_meta($product_ID, '_stock_status', 'instock' );
+          add_post_meta($product_ID, '_visibility', 'visible' );
+          add_post_meta($product_ID, '_manage_stock', "yes" );
+          add_post_meta($product_ID, '_stock', $stock_qu);
+          add_post_meta($product_ID, '_thumbnail_id', $image );
+          show_products($product_ID);
+          echo $price ." " . $stock_qu;
+          }
+    }
 
 echo '<div class="col-xs-12 col-md-12 add-product">';
 echo '<form id="custom-post-type" name="custom-post-type" method="post" action="'. htmlspecialchars($_SERVER["PHP_SELF"]) .'" enctype="multipart/form-data" >';
